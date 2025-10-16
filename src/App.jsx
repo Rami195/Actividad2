@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; 
-import Home from './components/Home'; 
+import './App.css';
+import Home from './components/Home';
 import Register from './components/register/Register'; 
 import PersonalInfo from './components/register/PersonalInfo'; 
 import ContactInfo from './components/register/ContactInfo'; 
@@ -12,7 +13,7 @@ function App() {
       <div className="app"> 
         <nav style={{ padding: '20px', borderBottom: '1px solid #ccc' }}> 
           <Link to="/" style={{ marginRight: '15px' }}>Inicio</Link> 
-          <Link to="/register">Registrarse</Link> 
+          <Link to="/register/personal">Registrarse</Link> 
         </nav> 
  
         <Routes> 
@@ -27,4 +28,5 @@ function App() {
     </BrowserRouter> 
   ); 
 } 
+export default App;
  
