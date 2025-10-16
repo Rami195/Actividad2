@@ -11,7 +11,6 @@ const ContactInfo = () => {
   }); 
  
   React.useEffect(() => { 
-    // Cargar datos previos del localStorage 
     const savedData = JSON.parse(localStorage.getItem('registrationData') || '{}'); 
     setFormData(prev => ({ ...prev, ...savedData })); 
   }, []); 
@@ -25,7 +24,6 @@ const ContactInfo = () => {
  
   const handleSubmit = (e) => { 
     e.preventDefault(); 
-    // Guardar en localStorage 
     localStorage.setItem('registrationData', JSON.stringify({ 
       ...JSON.parse(localStorage.getItem('registrationData') || '{}'), 
       ...formData 

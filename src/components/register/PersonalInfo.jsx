@@ -10,7 +10,6 @@ const PersonalInfo = () => {
     gender: ''
   });
 
-  // ✅ Cargar datos previos del localStorage al entrar (para Editar Información)
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem('registrationData') || '{}');
     setFormData(prev => ({
@@ -28,7 +27,6 @@ const PersonalInfo = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Guardar en localStorage para persistir entre pasos
     localStorage.setItem(
       'registrationData',
       JSON.stringify({

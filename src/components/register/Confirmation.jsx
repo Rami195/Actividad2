@@ -9,7 +9,7 @@ const Confirmation = () => {
 
   const handleConfirm = () => {
     alert('¡Registro completado exitosamente!');
-    localStorage.removeItem('registrationData'); // Limpiar datos
+    localStorage.removeItem('registrationData'); 
     navigate('/');
   };
 

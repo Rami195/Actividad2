@@ -58,7 +58,6 @@ const Register = () => {
           }}
         />
       </div>
-      {/* Formulario actual */}
       <Outlet />
     </div>
   );
